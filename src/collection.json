@@ -1,0 +1,31 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "my-awesome-schematics": {
+      "description": "A basic schematic.",
+      "factory": "./my-awesome-schematics/index#awesomeSchematics",
+      "schema": "./my-awesome-schematics/schema.json"
+    },
+    "datasource": {
+      "description": "A data source for a Material Datatable.",
+      "factory": "./datasource/index#datasource",
+      "schema": "./datasource/schema.json"
+    },
+    "module": {
+      "aliases": [
+        "m"
+      ],
+      "factory": "./module",
+      "description": "Create a custom Angular module.",
+      "schema": "./module/schema.json"
+    },
+    "component": {
+      "aliases": [
+        "c"
+      ],
+      "factory": "./component",
+      "description": "Create an Angular component.",
+      "schema": "./component/schema.json"
+    }
+  }
+}

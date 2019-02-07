@@ -1,0 +1,25 @@
+{
+  "name": "angular-schematics-fork",
+  "version": "1.0.0",
+  "description": "A blank schematics",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && jasmine src/**/*_spec.js"
+  },
+  "keywords": [
+    "schematics"
+  ],
+  "author": "Vinicius Rodrigues",
+  "private": false,
+  "license": "MIT",
+  "schematics": "./src/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "^7.2.2",
+    "@angular-devkit/schematics": "^7.2.2",
+    "@angular/cli": "^7.2.3",
+    "@types/jasmine": "^2.6.0",
+    "@types/node": "^8.0.31",
+    "jasmine": "^2.8.0",
+    "typescript": "~3.2.2"
+  }
+}
